@@ -16,5 +16,5 @@ console.log(sinB);
 
 //- valorDeC: Obtener el valor de la clave "c". (¡No puede hacer "valorDeC = original.c"!)
 ({c} = original);
-valorDeC = {c};
+valorDeC = c;
 console.log(valorDeC);
