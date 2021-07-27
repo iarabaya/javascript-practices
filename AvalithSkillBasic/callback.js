@@ -7,11 +7,11 @@
 
 console.log(1);
 
-function esperar2segundos() {
+function esperar2segundos(func) {
     console.log(2)
     setTimeout(() => {
-        console.log(3)
-        alTerminar();
+        console.log(3);
+        func();
     }, 2000);
 }
 
@@ -19,4 +19,4 @@ function alTerminar() {
     console.log(4)
 }
 
-esperar2segundos();
+esperar2segundos(alTerminar);
